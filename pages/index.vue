@@ -36,7 +36,8 @@
     <div class="block">
       <div class="block-title">Contact</div>
       <div class="block-body">
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
           <div class="form-group">
             <label for="form-name">Your Name:</label>
             <input class="input is-block" type="text" name="name" id="form-name" required />
